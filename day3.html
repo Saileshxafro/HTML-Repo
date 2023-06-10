@@ -5,65 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <form>
-        <label>
-            Enter Your First Name :
-        </label>
-        <input type="text"><br><br>
-        <label>
-            Enter Your Last Name :
-        </label>
-        <input type="text" placeholder="First Name" id="firstname"><br><br>
-        <label>
-            Enter Your Address
-        </label>
-        <textarea></textarea><br>
-        <input type="color">
-        <input type="datetime-local"><br>
-        <input type="email"><br>
-        <input type="password"><br>
-        <select>
-            <option value="">Courses</option>
-            <option value="fd">fs</option>
-            <option value="wd">wd</option>
-            <option value="ims">ims</option>
-            <option value="dm">dm</option>
-        </select><br>
-        <input type="radio">male <input type="radio">female
-        <input type="checkbox">html
-        <input type="file">
-        <input type="number" minlength="10" maxlength="20">
-        <input type="range">
-        <input type="button" value="click me">
-        <input type="submit">
-        <input type="reset">
-        <input type="search" value="search">
-        <input type="url" value="www.google.com">
-        <input type="tel">
+    <div class="container-fluid">
+        <form>
+            <label>
+                Enter Your First Name :
+            </label>
+            <input type="text"><br><br>
+            <label>
+                Enter Your Last Name :
+            </label>
+            <input type="text" placeholder="First Name" id="firstname"><br><br>
+            <label>
+                Enter Your Address
+            </label>
+            <textarea></textarea><br>
+            <input type="color">
+            <input type="datetime-local"><br>
+            <input type="email"><br>
+            <input type="password"><br>
+            <select>
+                <option value="">Courses</option>
+                <option value="fd">fs</option>
+                <option value="wd">wd</option>
+                <option value="ims">ims</option>
+                <option value="dm">dm</option>
+            </select><br>
+            <input type="radio">male <input type="radio">female
+            <input type="checkbox">html
+            <input type="file">
+            <input type="number" minlength="10" maxlength="20">
+            <input type="range">
+            <input type="button" value="click me">
+            <input type="submit">
+            <input type="reset">
+            <input type="search" value="search">
+            <input type="url" value="www.google.com">
+            <input type="tel">
+    
+        </form>
+        <table border="1px">
+            <tr>
+                <td>
+                    <label>
+                        Enter Your Name
+                    </label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Age :
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+        </table>
+        
 
-    </form>
-    <table border="1px">
-        <tr>
-            <td>
-                <label>
-                    Enter Your Name
-                </label>
-            </td>
-            <td>
-                <input type="text">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Age :
-            </td>
-            <td>
-                <input type="number">
-            </td>
-        </tr>
-    </table>
+    </div>
+    <div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+    </div>
+    <input type="text" pattern="[0-9]+" title="Please enter only number">
+    <audio controls src="https://file-examples.com/storage/fef677cdf46481c8d96f8cd/2017/11/file_example_MP3_700KB.mp3"></audio>
     
     
 </body>
